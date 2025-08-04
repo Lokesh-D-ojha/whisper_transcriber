@@ -41,14 +41,19 @@ git clone https://github.com/your-username/whisper_transcriber.git
 Navigate into the project folder and install the required packages
 You are now ready to run the application
 
+---
+
 ## 📂 Project Structure
+
+Here’s an overview of the key files and their roles in the project.
+
 .
-├── main.py             # CLI entry point and user interface loop
-├── recognizer.py       # Core class for audio capture & transcription
-├── exceptions.py       # Custom exception classes
-├── logger_config.py    # Logging configuration
-├── requirements.txt    # Python package dependencies
-└── README.md           # You are here!
+├── main.py
+├── recognizer.py
+├── exceptions.py
+├── logger_config.py
+├── requirements.txt
+└── README.md
 
 
 ## 🚀 Demo
