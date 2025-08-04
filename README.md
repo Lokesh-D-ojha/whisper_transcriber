@@ -17,8 +17,39 @@ This project uses `sounddevice` for microphone input, eliminating the need for `
 *   **🎧 PyAudio-Free**: Uses `sounddevice` for smoother installation and reliable microphone access.
 *   **⚙️ Simple & Robust**: A clean command-line interface with clear error handling for a seamless experience.
 *   **🪟 Windows Ready**: Pre-configured to find `ffmpeg` on Windows, solving common setup issues.
+*         os.environ["PATH"] = r"C:\ffmpeg\bin;" + os.environ["PATH"]
 
 ---
+
+##  🛠️ Installation & Setup
+Get up and running in three simple steps.
+
+Prerequisites: Python 3.8+, Git, and a microphone.
+
+1. Install ffmpeg (Crucial Requirement)
+Whisper needs ffmpeg to process audio. The script is hard-coded to find it in a specific location on Windows.
+
+Download the essentials build from Gyan.dev's FFmpeg Builds.
+Extract the archive to C:\ffmpeg. The script will automatically find it there.
+2. Clone the Repository
+Open your terminal and run the following command:
+
+Bash
+
+git clone https://github.com/your-username/whisper_transcriber.git
+3. Install Python Dependencies
+Navigate into the project folder and install the required packages
+You are now ready to run the application
+
+## 📂 Project Structure
+.
+├── main.py             # CLI entry point and user interface loop
+├── recognizer.py       # Core class for audio capture & transcription
+├── exceptions.py       # Custom exception classes
+├── logger_config.py    # Logging configuration
+├── requirements.txt    # Python package dependencies
+└── README.md           # You are here!
+
 
 ## 🚀 Demo
 
@@ -49,32 +80,3 @@ Hello, this is a test of the Whisper transcriber, and it seems to be working per
 
 Press Enter to continue or type 'quit': quit
 
-
-##  🛠️ Installation & Setup
-Get up and running in three simple steps.
-
-Prerequisites: Python 3.8+, Git, and a microphone.
-
-1. Install ffmpeg (Crucial Requirement)
-Whisper needs ffmpeg to process audio. The script is hard-coded to find it in a specific location on Windows.
-
-Download the essentials build from Gyan.dev's FFmpeg Builds.
-Extract the archive to C:\ffmpeg. The script will automatically find it there.
-2. Clone the Repository
-Open your terminal and run the following command:
-
-Bash
-
-git clone https://github.com/your-username/whisper_transcriber.git
-3. Install Python Dependencies
-Navigate into the project folder and install the required packages
-You are now ready to run the application
-
-## 📂 Project Structure
-.
-├── main.py             # CLI entry point and user interface loop
-├── recognizer.py       # Core class for audio capture & transcription
-├── exceptions.py       # Custom exception classes
-├── logger_config.py    # Logging configuration
-├── requirements.txt    # Python package dependencies
-└── README.md           # You are here!
